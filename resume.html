@@ -1,0 +1,88 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- HEADER CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <h1>A.Uzair Resume Build</h1>
+        </div>
+  
+    
+  
+        <div class="fbutton1">
+          <button>Let's Build</button>
+        </div>
+      </header>
+  
+        
+<!-- header end -->
+        <!-- form start -->
+        <center>
+        <div class="wrapper">
+            <form id="personal-info-form" onsubmit="return validateForm(event)">
+                <h1>Personal Info</h1>
+            
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" id="number" placeholder="Number">
+                </div>
+            
+                <div class="input-box">
+                    <input type="file" id="image-upload" accept="image/*">
+                </div>
+            
+                <h1>Education</h1>
+                <div class="input-box">
+                    <textarea id="education" placeholder="Enter your education details"></textarea>
+                </div>
+            <br><br>               <h1>Skills</h1>
+            <br>
+                <div class="toggle-section">
+                    <button type="button" class="toggle-btn" onclick="toggleSkills()">Show Skills</button>
+                </div>
+            
+                <div id="skills-section" class="skills-section" style="display: none;">
+                    <div class="input-box" id="skills-list">
+                        <div class="skill-row">
+                            <input type="text" id="skill-1" placeholder="Enter your skill" name="skills[]">
+                            <br><br>
+                            <button type="button" id="fbutton1" class="remove-skill-btn" onclick="removeSkill(this)">Remove</button>
+                        
+                        </div>
+
+                    </div>
+                    <br>  
+             <button type="button" id="fbutton1" class="add-skill-btn" onclick="addSkill()">Add Skill</button>
+            
+            </div>
+            <br><br>
+                <h1>Work Experience</h1>
+                <div class="input-box">
+                    <textarea id="work-experience" placeholder="Enter your work experience"></textarea>
+                </div>
+            <br><br>
+                <button type="submit" class="btn" href="" onclick="return handleSubmit(event)">Submit</button>
+            </form>
+            
+    
+        </div>
+    </center>
+            
+
+            <!-- header javascript link -->
+            <script src="Resume.js"></script>
+            
+</body>
+</html>
+
