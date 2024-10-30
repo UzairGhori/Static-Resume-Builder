@@ -1,297 +1,168 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    background-size: cover;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
-.header{
-    background-color: transparent;
-    display: flex;
-    justify-content:space-between;
-    padding: 0px 10px;
-    height: 80px;
-    box-shadow: 0 05px 10px 0px #fff;
-}
-
-.logo h1{
-    padding: 08px;
-    font-size: 50px;
-    font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+.header {
+    background-color: #333;
     color: #fff;
-
-}
-
-.fbutton1{
-    color: white;
-    font-size: 18px;
-    margin: 0px;
-    padding: 25px;
-}
-.fbutton1:hover{
-    background-color: rgba(37, 35, 35, 0.583);
-
-}
-
-.fbutton1 button{
-    width: 100%;
-    padding: 03px;
-    border-radius: 05px;
-    background-color: transparent;
-    color: white;font-size: 25px;
-    box-shadow:  0px 5px 10px 0px #aaa;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-body{
-    display:block;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('https://images.unsplash.com/photo-1726024708313-db80f6085141?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-
-}
-
-h1{
-    font-size: 50px;
-    font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
-}
-
-.input-box input[type="file"] {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    font-size: 20px;
-    color: #fff;
-    padding: 20px;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    cursor: pointer;
-}
-
-.input-box input[type="file"]::-webkit-file-upload-button {
-    visibility: hidden;
-}
-
-.input-box input[type="file"]::before {
-    content: 'Upload Image';
-    display: inline-block;
-    background: #fff;
-    color: #333;
-    border-radius: 40px;
-    padding: 10px 20px;
-    font-weight: 600;
-    margin-top: -7%;
-    display: flex;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-}
-
-.input-box input[type="file"]:hover::before {
-    background: rgba(255, 255, 255, .2);
-    color: #fff;
-}
-
-body{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-}
-*{
-	
-	box-sizing: border-box;
-}
-
-
-.wrapper{
-    width: 420px;
-    height: 1200px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(6px);
-    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
-    color: #fff;
-    padding: 30px 40px;
-    margin-top: 10%;
-    margin-bottom: 05%;
-}
-
-.wrapper h1{
-    font-size: 36px;
+    padding: 10px 0;
     text-align: center;
 }
 
-.wrapper .input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
+#personal li{
+ font-size: 1.7rem;
+ font-family:'Times New Roman', Times, serif;
+ font-weight: italic;
+
 }
 
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 40px 20px 20px;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
+.logo h1 {
+    font-size: 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin: 0;
 }
 
-.input-box input::placeholder{
-    color: #fff;
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 0%;
+    gap: 10rem;
 }
 
-
-.wrapper .btn{
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    color: #333;
-    font-weight: 600;
+img{
+    width: 10%;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 50%;
+    
 }
-
-.wrapper .btn:hover{
-    background: rgba(255, 255, 255, .2);
-    color: #fff;
-    border-color: #fff;
-}
-
-
-.input-box input[type="file"] {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    font-size: 16px;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
+img:hover{
+    transform: scale(1.5);
     cursor: pointer;
 }
 
-
-.input-box textarea {
-    width: 100%;
-    height: 100px;
-    background: transparent;
-    font-size: 16px;
-    color: #fff;
+.Resume{
+    width: 50rem;
+    margin: 50px 0;
     padding: 20px;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 20px;
-    resize: none;
+    border: 5px solid #3f3d3d;
+    border-radius: 10px;
+    
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.541);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+    transform-style: preserve-3d;
+    will-change: transform;
 }
 
-.input-box textarea::placeholder {
-    color: #fff;
-}
-.input-box input[type="file"] {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    font-size: 16px;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    cursor: pointer;
+.Info {
+    margin: 20px;
+    text-align: center;
+
 }
 
-.input-box input[type="file"]::-webkit-file-upload-button {
-    visibility: hidden;
+.Info img {
+      
+        border-radius: 45%;
+         /* Makes the image circular */  
+        width: 250px; /* Set width */  
+        height: 250px; /* Set height */  
+        object-fit: cover; /* Ensures the image covers the circle */  
+        animation: spin 5s linear infinite; /* Applies spin animation */  
+        border: 2px solid #12161a; /* Optional: Add a border (change color if desired) */  
+    }  
+
+    @keyframes spin {  
+        0% {  
+            transform: rotateY(0deg);  
+        }  
+        100% {  
+            transform: rotateY(360deg);  
+        }
+    }
+
+.Info h1 {
+    font-size: 05rem;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 0;
 }
 
-.input-box input[type="file"]::before {
-    content: 'Upload Image';
+.Info email {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0073b1;
+    display: block;
+    margin: 10px 0;
+}
+
+.Info a {
     display: inline-block;
-    background: #fff;
-    color: #333;
-    border-radius: 40px;
+    margin: 5px;
+    text-decoration: none;
+    color: #0073b1;
+}
+
+.Info a:hover {
+    text-decoration: underline;
+}
+
+.linkedin, .github {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0;
+}
+
+#toggle-skills-btn {
+    display: block;
+    margin: 20px auto;
     padding: 10px 20px;
-    font-weight: 600;
+    background-color: #0073b1;
+    color: #fff;
+    border: none;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
-.input-box input[type="file"]:hover::before {
-    background: rgba(255, 255, 255, .2);
-    color: #fff;
+#toggle-skills-btn:hover {
+    background-color: #005f8d;
 }
 
-.input-box textarea {
-    width: 100%;
-    height: 100px;
-    background: transparent;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 20px;
-    resize: none;
+#skills li{
+    margin: 20px 0;
+    font-size:2rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.input-box textarea::placeholder {
-    color: #fff;
-}
+.education{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: italic;
 
-.toggle-btn {
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    border-radius: 40px;
-    color: #333;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    margin-bottom: 20px;
 }
-
-.toggle-btn:hover {
-    background: rgba(255, 255, 255, .2);
-    color: #fff;
-}
-
-.skills-section input {
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 20px;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-}
-
-.skills-section input::placeholder {
-    color: #fff;
-}
-
